@@ -71,6 +71,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 source ~/.bashrc
+
+or
+
+sudo apt install fzf 
+
 ```
 
 # JQ YQ
@@ -90,6 +95,19 @@ wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod
 # Helm
 ```
 wget https://get.helm.sh/helm-v3.14.3-linux-amd64.tar.gz -O -|tar -xz && sudo mv ~/linux-amd64/helm /usr/local/bin/helm
+```
+
+# MC for minio
+https://min.io/docs/minio/linux/reference/minio-mc.html
+```
+curl https://dl.min.io/client/mc/release/linux-amd64/mc \
+  --create-dirs \
+  -o $HOME/minio-binaries/mc
+
+chmod +x $HOME/minio-binaries/mc
+export PATH=$PATH:$HOME/minio-binaries/
+
+mc --help
 ```
 
 # Kustomize
