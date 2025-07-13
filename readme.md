@@ -46,6 +46,9 @@ sudo cp kubens /usr/local/bin/kubens
 
 # Alias
 add the detail on ~/.bashrc file
+
+can skip if want to use autocomplete \
+https://github.com/newkung6/ninew-2024-bashrc
 ```
 #kubectl
 source <(kubectl completion bash)
@@ -94,8 +97,9 @@ Ref: https://kubectl.docs.kubernetes.io/installation/kustomize/binaries/
 
 ```
 curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
-```
 
+sudo mv ~/kustomize /usr/local/bin/kustomize
+```
 
 # K3D
 Ref. \
